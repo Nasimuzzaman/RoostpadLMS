@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(300) DEFAULT NULL,
+  `email` varchar(300) DEFAULT NULL,
+  `password` varchar(300) DEFAULT NULL,
+  `designation` varchar(300) DEFAULT NULL,
+  `role` varchar(300) DEFAULT NULL,
+  `holiday` INTEGER(5) DEFAULT NULL,
+  `gender` BIT DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;
