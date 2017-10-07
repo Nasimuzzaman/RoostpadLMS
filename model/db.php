@@ -8,8 +8,8 @@
 
 $host = "localhost";
 $user = "root";
-$password = "";
-$database = "mms";
+$password = "root";
+$database = "roostpaddb";
 $con = mysqli_connect($host, $user, $password, $database) or die("error");
 
 ?>

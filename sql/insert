@@ -1,0 +1,2 @@
+INSERT INTO `users` (`id`, `name`, `username`, `password`, `designation`, `role`, `holiday`, `gender`) VALUES
+(4, NULL, 'Julfikar', '$2y$10$BUS/FkDkXJCXXcauug/gg.1zDJb8K1bnKVzgM.CNtjYE39xVbGcgW', 'Software Engineer', 'Employee', 25, 1);
