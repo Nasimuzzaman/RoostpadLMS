@@ -32,10 +32,13 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 <div class="outer">
     <div class="middle">
         <div class="inner">
+            <button><a href="../controller/register.php">Sign Up</a></button>
+            <button><a href="../controller/logout.php">Log Out</a></button>
+            <button><a href="../controller/Home.php">Home</a></button>
 
-            <h1>The Content</h1>
 
-            <p>Once upon a midnight dreary...</p>
+            <h1>Welcome</h1>
+
 
         </div>
     </div>
