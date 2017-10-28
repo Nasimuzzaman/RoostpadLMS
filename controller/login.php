@@ -15,6 +15,10 @@ if ($conn->connect_error == false) {
     $params   = (array)$params;
     $email    = $params["email"];
     $password = $params["password"];
+
+
+
+
     //$password = sha1($password);
     $sql      = "SELECT * FROM users WHERE email = '$email'";
     $result   = $conn->query($sql);
