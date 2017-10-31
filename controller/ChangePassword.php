@@ -15,13 +15,13 @@ if ($conn->connect_error == false) {
     $params   = (array)$params;
     $email    = $params["email"];
     $password = $params["password"];
-    $new_password = $params["new_password"];
+    $newPassword = $params["newPassword"];
 
     $check_password = "SELECT password FROM users WHERE email = '$email'";
     $result   = $conn->query($check_password);
 
     if($result->fetch_assoc()["password"] == $password) {
-        $sql = "UPDATE users SET password = '$new_password' WHERE email='$email'";
+        $sql = "UPDATE users SET password = '$newPassword' WHERE email='$email'";
         if($conn->query($sql)) {
             $params["message"] = "Password changed successfully !";
             $params["statusCode"] = 200;
