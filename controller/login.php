@@ -24,6 +24,8 @@ if ($conn->connect_error == false) {
     $result   = $conn->query($sql);
 
     if ($result->num_rows == 1) {
+
+
         $data = new stdClass();
         $row  = $result->fetch_assoc();
         if ($password == $row["password"]) {
@@ -36,6 +38,17 @@ if ($conn->connect_error == false) {
                 $row["error"]      = "";
                 unset($row["password"]);
                 $row["message"] = "Logged in successfully!";
+
+                $sql2 = "SELECT users.email from users where users.role = 'CTO'";
+                $res = $conn->query($sql2);
+                if($res) {
+                    $row2  = $res->fetch_assoc();
+                    $row["emailOfCTO"] = $row2["email"];
+                } else {
+                    echo "Error";
+                }
+
+
                 echo json_encode($row);
             } else {
                 printError("Could not generate token! Try again.");
@@ -44,6 +57,8 @@ if ($conn->connect_error == false) {
         } else {
             printError("Email or password do not match.");
         }
+
+
 
     } else {
         printError("Oops! Something went wrong!");

@@ -22,11 +22,14 @@ if ($conn->connect_error == false) {
 
     $sql = "INSERT INTO leave_requests (email, from_date, to_date, days, message, seen, status) 
             VALUES ('$email', '$fromDate', '$toDate', '$days', '$message', 0, 'pending')";
+
     if ($conn->query($sql)) {
         $params["message"] = "Request sent successfully !";
         $params["statusCode"] = 200;
         $params["error"] = "";
         echo json_encode($params);
-    }
+    } else {
+	echo "Error";
+	}
     $conn->close();
 }
