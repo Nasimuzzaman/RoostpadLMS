@@ -10,7 +10,7 @@ include_once '../model/config.php';
 
 if ($conn->connect_error == false) {
 
-    $sql = "SELECT users.name, users.email, users.contact  FROM users";
+    $sql = "SELECT users.*  FROM users";
     if($conn->query($sql)) {
 
         $result = $conn->query($sql);
