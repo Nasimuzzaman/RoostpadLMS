@@ -24,6 +24,17 @@ if ($conn->connect_error == false) {
     $gender = $params["gender"];
 
     $sql = "INSERT INTO users (name, email, contact, password, designation, role, holiday, gender) VALUES ('$name', '$email', '$contact', '$password', '$designation', '$role', '$holiday', '$gender')";
+
+    $sql2 = ("SELECT email FROM users WHERE email = '$email'") or exit(mysqli_error());
+    $select = $conn->query($sql2);
+    if(mysqli_num_rows($select)) {
+        $params["message"] = "User Already in Exists";
+        $params["statusCode"] = 300;
+        $params["error"] = "Email Already in Exists";
+        exit("User Already in Exists");
+        $conn->close();
+    }
+
     if($conn->query($sql)) {
         $params["message"] = "User added successfully";
         $params["statusCode"] = 200;
