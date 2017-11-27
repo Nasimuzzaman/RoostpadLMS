@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bfe78fa-5035-4400-b9fd-98839d7f1735" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/login.php" afterPath="$PROJECT_DIR$/controller/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/DeleteUser.php" afterPath="$PROJECT_DIR$/controller/DeleteUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/GetEmployeeNotification.php" afterPath="$PROJECT_DIR$/controller/GetEmployeeNotification.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,53 +14,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DeleteUser.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/DeleteUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="25" column="102" lean-forward="true" selection-start-line="25" selection-start-column="102" selection-end-line="25" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetEmployeeNotification.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/GetEmployeeNotification.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <marker date="1511773202259" expanded="true" signature="614:1328" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RequestForHoliday.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/RequestForHoliday.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+            <state relative-caret-position="351">
+              <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
               <folding>
                 <marker date="1511758747559" expanded="true" signature="890:1354" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/AddUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="41" />
-              <folding>
-                <marker date="1511761186154" expanded="true" signature="918:1819" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChangePassword.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/ChangePassword.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-              <folding>
-                <marker date="1509352560254" expanded="true" signature="431:480" ph="SELECT * FRO... users" />
-                <marker date="1509352560254" expanded="true" signature="605:660" ph="UPDATE users... " />
-                <marker date="1509352560254" expanded="true" signature="605:668" ph="UPDATE login... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controller/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-              <folding>
-                <marker date="1511765344512" expanded="true" signature="436:478" ph="SELECT * FRO... users" />
-                <marker date="1511765344512" expanded="true" signature="741:797" ph="UPDATE user " />
-                <marker date="1511765344512" expanded="true" signature="1150:1204" ph="SELECT users... users" />
               </folding>
             </state>
           </provider>
@@ -71,6 +53,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Notice</find>
+      <find>Add</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,13 +87,13 @@
         <option value="$PROJECT_DIR$/controller/UpdateDBAfterReply.php" />
         <option value="$PROJECT_DIR$/controller/ShowContacts.php" />
         <option value="$PROJECT_DIR$/controller/UpdateUser.php" />
-        <option value="$PROJECT_DIR$/controller/DeleteUser.php" />
         <option value="$PROJECT_DIR$/controller/RecoverPassword.php" />
-        <option value="$PROJECT_DIR$/controller/GetEmployeeNotification.php" />
         <option value="$PROJECT_DIR$/controller/AddPublicHoliday.php" />
         <option value="$PROJECT_DIR$/controller/RequestForHoliday.php" />
         <option value="$PROJECT_DIR$/controller/AddUser.php" />
         <option value="$PROJECT_DIR$/controller/login.php" />
+        <option value="$PROJECT_DIR$/controller/GetEmployeeNotification.php" />
+        <option value="$PROJECT_DIR$/controller/DeleteUser.php" />
       </list>
     </option>
   </component>
@@ -231,12 +214,12 @@
       <workItem from="1510720820131" duration="1289000" />
       <workItem from="1510736198423" duration="2421000" />
       <workItem from="1511067306193" duration="2195000" />
-      <workItem from="1511754335016" duration="8103000" />
+      <workItem from="1511754335016" duration="11475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71889000" />
+    <option name="totallyTimeSpent" value="75261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1319" height="786" extended-state="6" />
@@ -454,13 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/DeleteUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/UpdateDBAfterReply.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -490,14 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/GetEmailOfCTO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/GetPendingLeaveRequests.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -510,29 +478,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/GetEmployeeNotification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/AddPublicHoliday.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/AddUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <marker date="1511761186154" expanded="true" signature="918:1819" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -548,16 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/RequestForHoliday.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding>
-            <marker date="1511758747559" expanded="true" signature="890:1354" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -567,6 +507,50 @@
             <marker date="1511765344512" expanded="true" signature="741:797" ph="UPDATE user " />
             <marker date="1511765344512" expanded="true" signature="1150:1204" ph="SELECT users... users" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/GetEmailOfCTO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/AddUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/RequestForHoliday.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <marker date="1511758747559" expanded="true" signature="890:1354" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/GetEmployeeNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1511773202259" expanded="true" signature="614:1328" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/DeleteUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="25" column="102" lean-forward="true" selection-start-line="25" selection-start-column="102" selection-end-line="25" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>

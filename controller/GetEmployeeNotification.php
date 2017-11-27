@@ -14,26 +14,37 @@ if ($conn->connect_error == false) {
     $params = json_decode($jsonBody);
     $params = (array)$params;
     $email = $params["email"];
+    $token = $params["token"];
 
-    $sql = "SELECT leave_requests.*, users.holiday from leave_requests LEFT JOIN users ON leave_requests.email = users.email WHERE leave_requests.email = '$email'";
+    $sqlInfo = ("SELECT token, role FROM users WHERE email = '$email'") or exit(mysqli_error());
+    $info = $conn->query($sqlInfo);
 
 
-    if ($conn->query($sql)) {
+    $data = $info->fetch_assoc();
 
-        $result = $conn->query($sql);
-        $notifications = array();
-        while (($row = $result->fetch_assoc()) != null) {
-            $notifications[] = $row;
+    if(mysqli_num_rows($info) && $data["token"] == $token && $data["role"] == "Employee") {
+        $sql = "SELECT leave_requests.*, users.holiday from leave_requests LEFT JOIN users ON leave_requests.email = users.email WHERE leave_requests.email = '$email'";
+
+        if ($conn->query($sql)) {
+
+            $result = $conn->query($sql);
+            $notifications = array();
+            while (($row = $result->fetch_assoc()) != null) {
+                $notifications[] = $row;
+            }
+            $params["notificationList"] = $notifications;
+            $params["message"] = "";
+            $params["statusCode"] = 200;
+            $params["error"] = "";
+            echo json_encode($params);
+        } else {
+            printError("Could not get pending requests! Try again!");
         }
-        $params["notificationList"] = $notifications;
-        $params["message"] = "";
-        $params["statusCode"] = 200;
-        $params["error"] = "";
-        echo json_encode($params);
     } else {
-        printError("Could not get pending requests! Try again!");
+        $params["message"] = "Permission denied";
+        $params["statusCode"] = 403;
+        $params["error"] = "You don't have sufficient permission";
+        //echo json_encode($params);
     }
-
     $conn->close();
-
 }
