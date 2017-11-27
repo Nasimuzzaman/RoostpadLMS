@@ -14,6 +14,8 @@ if ($conn->connect_error == false) {
     $jsonBody = file_get_contents('php://input');
     $params = json_decode($jsonBody);
     $params = (array)$params;
+    $emailOfAdder = $params["emailOfAdder"];
+    $tokenOfAdder = $params["tokenOfAdder"];
     $name = $params["name"];
     $email = $params["email"];
     $contact = $params["contact"];
@@ -23,25 +25,35 @@ if ($conn->connect_error == false) {
     $holiday = $params["holiday"];
     $gender = $params["gender"];
 
-    $sql = "INSERT INTO users (name, email, contact, password, designation, role, holiday, gender) VALUES ('$name', '$email', '$contact', '$password', '$designation', '$role', '$holiday', '$gender')";
+    $sqlInfo = ("SELECT token, role FROM users WHERE email = '$emailOfAdder'") or exit(mysqli_error());
+    $res = $conn->query($sqlInfo);
 
-    $sql2 = ("SELECT email FROM users WHERE email = '$email'") or exit(mysqli_error());
-    $select = $conn->query($sql2);
-    if(mysqli_num_rows($select)) {
-        $params["message"] = "User Already in Exists";
-        $params["statusCode"] = 300;
-        $params["error"] = "Email Already in Exists";
-        exit("User Already in Exists");
-        $conn->close();
-    }
+    if(mysqli_num_rows($res) && $res->fetch_assoc()["token"] == $tokenOfAdder && $res->fetch_assoc()["role"] != "Employee") {
+        $sql = "INSERT INTO users (name, email, contact, password, designation, role, holiday, gender) VALUES ('$name', '$email', '$contact', '$password', '$designation', '$role', '$holiday', '$gender')";
 
-    if($conn->query($sql)) {
-        $params["message"] = "User added successfully";
-        $params["statusCode"] = 200;
-        $params["error"] = "";
-        echo json_encode($params);
+        $sql2 = ("SELECT email FROM users WHERE email = '$email'") or exit(mysqli_error());
+        $select = $conn->query($sql2);
+        if(mysqli_num_rows($select)) {
+            $params["message"] = "User Already in Exists";
+            $params["statusCode"] = 409;
+            $params["error"] = "Conflict";
+            exit("User Already in Exists");
+            $conn->close();
+        }
+
+        if($conn->query($sql)) {
+            $params["message"] = "User added successfully";
+            $params["statusCode"] = 200;
+            $params["error"] = "";
+            echo json_encode($params);
+        } else {
+            printError( "Could not add user! Try again!");
+        }
     } else {
-        printError( "Could not add user! Try again!");
+        $params["message"] = "Permission denied";
+        $params["statusCode"] = 403;
+        $params["error"] = "You don't have sufficient permission";
+        exit("Permission denied");
     }
 
     $conn->close();
