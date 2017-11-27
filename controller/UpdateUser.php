@@ -20,17 +20,28 @@ if ($conn->connect_error == false) {
     $designation = $params["designation"];
     $role = $params["role"];
     $holiday = $params["holiday"];
+    $emailOfAuthor = $params["emailOfAuthor"];
+    $tokenOfAuthor = $params["tokenOfAuthor"];
 
-    $sql = "UPDATE users SET users.name = '$name', users.contact = '$contact', users.designation = '$designation', 
+    $sqlInfo = ("SELECT token, role FROM users WHERE email = '$emailOfAuthor'") or exit(mysqli_error());
+    $res = $conn->query($sqlInfo);
+
+
+    $data = $res->fetch_assoc();
+
+    if( $data["token"] == $tokenOfAuthor && ( $data["role"] == "CTO"  || $data["role"] == "Admin") ) {
+
+        $sql = "UPDATE users SET users.name = '$name', users.contact = '$contact', users.designation = '$designation', 
             users.role = '$role', users.holiday = '$holiday' WHERE users.email = '$email'";
 
-    if($conn->query($sql)) {
-        $params["message"] = "User updated successfully";
-        $params["statusCode"] = 200;
-        $params["error"] = "";
-        echo json_encode($params);
-    } else {
-        printError( "Could not update user! Try again!");
+        if($conn->query($sql)) {
+            $params["message"] = "User updated successfully";
+            $params["statusCode"] = 200;
+            $params["error"] = "";
+            echo json_encode($params);
+        } else {
+            printError( "Could not update user! Try again!");
+        }
     }
 
     $conn->close();

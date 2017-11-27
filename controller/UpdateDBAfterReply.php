@@ -18,21 +18,33 @@ if ($conn->connect_error == false) {
     $email = $params["email"];
     $days = $params["days"];
     $status = $params["status"];
+    $emailOfAuthor = $params["emailOfAuthor"];
+    $tokenOfAuthor = $params["tokenOfAuthor"];
 
-    $sql = "UPDATE leave_requests SET status = '$status' WHERE leave_requests.id = '$id'";
+    $sqlInfo = ("SELECT token, role FROM users WHERE email = '$emailOfAuthor'") or exit(mysqli_error());
+    $res = $conn->query($sqlInfo);
 
-    if($conn->query($sql)) {
-        if($status == "accepted") {
-            $sql2 = "UPDATE users SET holiday = (holiday - '$days') WHERE users.email = '$email'";
-            $conn->query($sql2);
+
+    $data = $res->fetch_assoc();
+
+    if( $data["token"] == $tokenOfAuthor && $data["role"] == "CTO" ) {
+        $sql = "UPDATE leave_requests SET status = '$status' WHERE leave_requests.id = '$id'";
+
+        if($conn->query($sql)) {
+            if($status == "accepted") {
+                $sql2 = "UPDATE users SET holiday = (holiday - '$days') WHERE users.email = '$email'";
+                $conn->query($sql2);
+            }
+            $params["message"] = "DB Updated successfully";
+            $params["statusCode"] = 200;
+            $params["error"] = "";
+            echo json_encode($params);
+        } else {
+            printError( "Could not update DB! Try again!");
         }
-        $params["message"] = "DB Updated successfully";
-        $params["statusCode"] = 200;
-        $params["error"] = "";
-        echo json_encode($params);
-    } else {
-        printError( "Could not update DB! Try again!");
     }
+
+
 
     $conn->close();
 
