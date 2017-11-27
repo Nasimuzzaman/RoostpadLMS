@@ -36,7 +36,7 @@ if ($conn->connect_error == false) {
                 $row["id"] = (int)$row["id"];
                 $row["statusCode"] = 200;
                 $row["error"]      = "";
-                unset($row["password"]);
+                //unset($row["password"]);
                 $row["message"] = "Logged in successfully!";
 
                 $sql2 = "SELECT users.email from users where users.role = 'CTO'";
