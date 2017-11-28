@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: nasimuzzaman
- * Date: 11/19/17
- * Time: 10:58 AM
+ * Date: 11/28/17
+ * Time: 5:19 PM
  */
 
 include_once '../model/config.php';
@@ -22,8 +22,8 @@ if ($conn->connect_error == false) {
 
     $data = $info->fetch_assoc();
 
-    if(mysqli_num_rows($info) && $data["token"] == $token && ( $data["role"] == "Employee" || $data["role"] == "Admin") ) {
-        $sql = "SELECT leave_requests.*, users.holiday from leave_requests LEFT JOIN users ON leave_requests.email = users.email WHERE leave_requests.email = '$email'";
+    if($data["token"] == $token && ( $data["role"] == "Employee" || $data["role"] == "Admin" ) ) {
+        $sql = "SELECT requests.*, users.holiday from requests LEFT JOIN users ON requests.email = users.email WHERE requests.email = '$email'";
 
         if ($conn->query($sql)) {
 
