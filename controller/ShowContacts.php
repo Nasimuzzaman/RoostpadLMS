@@ -45,9 +45,5 @@ if ($conn->connect_error == false) {
         $params["error"] = "You don't have sufficient permission";
         //echo json_encode($params);
     }
-
-
-
     $conn->close();
-
 }

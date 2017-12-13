@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bfe78fa-5035-4400-b9fd-98839d7f1735" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/InsertRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/employeeNotification.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/pendingLeaveRequests.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/replyToHolidayRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/requestHoliday.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/updateProfile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/GetEmployeeNotification.php" afterPath="$PROJECT_DIR$/controller/GetEmployeeNotification.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ShowContacts.php" afterPath="$PROJECT_DIR$/controller/ShowContacts.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,61 +15,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GetEmployeeNotification.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/GetEmployeeNotification.php">
+      <file leaf-file-name="UpdateUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/UpdateUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="560">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="employeeNotification.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/employeeNotification.php">
+      <file leaf-file-name="ShowContacts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/ShowContacts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+            <state relative-caret-position="392">
+              <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateDBAfterReply.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/UpdateDBAfterReply.php">
+      <file leaf-file-name="updateProfile.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/updateProfile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="50" column="1" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="50" selection-end-column="1" />
+            <state relative-caret-position="547">
+              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="replyToHolidayRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/replyToHolidayRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="34" column="70" lean-forward="false" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pendingLeaveRequests.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/pendingLeaveRequests.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="29" selection-end-column="39" />
+            <state relative-caret-position="238">
+              <caret line="22" column="61" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -121,15 +97,16 @@
         <option value="$PROJECT_DIR$/controller/login.php" />
         <option value="$PROJECT_DIR$/controller/DeleteUser.php" />
         <option value="$PROJECT_DIR$/controller/GetPendingLeaveRequests.php" />
-        <option value="$PROJECT_DIR$/controller/ShowContacts.php" />
         <option value="$PROJECT_DIR$/controller/UpdateDBAfterReply.php" />
-        <option value="$PROJECT_DIR$/controller/UpdateUser.php" />
         <option value="$PROJECT_DIR$/controller/InsertRequest.php" />
         <option value="$PROJECT_DIR$/controller/requestHoliday.php" />
         <option value="$PROJECT_DIR$/controller/pendingLeaveRequests.php" />
         <option value="$PROJECT_DIR$/controller/GetEmployeeNotification.php" />
         <option value="$PROJECT_DIR$/controller/employeeNotification.php" />
         <option value="$PROJECT_DIR$/controller/replyToHolidayRequest.php" />
+        <option value="$PROJECT_DIR$/controller/updateProfile.php" />
+        <option value="$PROJECT_DIR$/controller/ShowContacts.php" />
+        <option value="$PROJECT_DIR$/controller/UpdateUser.php" />
       </list>
     </option>
   </component>
@@ -162,7 +139,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,6 +165,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,11 +231,12 @@
       <workItem from="1511790504686" duration="968000" />
       <workItem from="1511866301860" duration="3396000" />
       <workItem from="1511874015555" duration="937000" />
+      <workItem from="1511949981490" duration="5494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84844000" />
+    <option name="totallyTimeSpent" value="90338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1319" height="786" extended-state="6" />
@@ -294,7 +272,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/register.php" />
     <entry file="file://$PROJECT_DIR$/controller/logout.php" />
     <entry file="file://$PROJECT_DIR$/sql/user_db">
       <provider selected="true" editor-type-id="text-editor">
@@ -450,13 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ShowContacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/GetEmailOfCTO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -468,13 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="25" column="102" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/UpdateUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -521,14 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/pendingLeaveRequests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="29" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/employeeNotification.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -547,16 +502,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/replyToHolidayRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
+        <state relative-caret-position="406">
           <caret line="34" column="70" lean-forward="false" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/pendingLeaveRequests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="29" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ShowContacts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        <state relative-caret-position="238">
+          <caret line="22" column="61" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/UpdateUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/updateProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
           <folding />
         </state>
       </provider>
